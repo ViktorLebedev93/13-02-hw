@@ -40,9 +40,9 @@ sudo adduser cryptouser
 sudo usermod -a -G sudo cryptouser
 ecryptfs-migrate-home -u cryptouser
 ```
-<img src="img/img1.jpg">
-<img src="img/img2.jpg">
-<img src="img/img3.jpg">
+![Скриншот](img/img1.jpg)
+![Скриншот](img/img2.jpg)
+![Скриншот](img/img3.jpg)
 
 ---
 
@@ -68,10 +68,10 @@ sudo touch /mnt/encrypted/testfile
 sudo ls /mnt/encrypted
 ```
 Шифруем раздел
-<img src="img/img4.jpg">
+![Скриншот](img/img4.jpg)
 
 Открываем зашифрованнй рздел. Проверяем что он зашифрован. Создаем на нем файловую систему. Монтируем. создаем на нем файл.
-<img src="img/img5.jpg">
+![Скриншот](img/img5.jpg)
 
 ---
 
