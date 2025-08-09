@@ -56,6 +56,22 @@ ecryptfs-migrate-home -u cryptouser
 
 ### Решение 2
 
+```
+sudo apt install cryptsetup -y
+sudo fdisk /dev/vdb
+sudo cryptsetup luksFormat /dev/vdb1
+sudo cryptsetup open /dev/vdb1 encrypted_volume
+sudo mkfs.ext4 /dev/mapper/encrypted_volume
+sudo mkdir /mnt/encrypted
+sudo mount /dev/mapper/encrypted_volume /mnt/encrypted
+sudo touch /mnt/encrypted/testfile
+sudo ls /mnt/encrypted
+```
+Шифруем раздел
+<img src="img/img4.jpg">
+
+Открываем зашифрованнй рздел. Проверяем что он зашифрован. Создаем на нем файловую систему. Монтируем. создаем на нем файл.
+<img src="img/img5.jpg">
 
 ---
 
